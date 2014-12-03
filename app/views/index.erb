@@ -1,0 +1,27 @@
+<section id="container">
+  <h2>My Contacts</h2>
+
+  <button id="getContacts">Get Contacts</button><br>
+  
+  <form id="addNew" action="/contacts/create" method="post">
+    <input type="text" name="firstname" id="first-name"><br />
+    <input type="text" name="laststname" id="last-name"><br />
+    <input type="email" name="email" id="email"><br />
+    <input type="submit" id="AddContact">
+  </form>
+
+  <section id="results" class="hide">
+    <table id="contacts">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+</section>
